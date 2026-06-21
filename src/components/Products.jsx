@@ -1,9 +1,12 @@
-import { useProducts } from "../context/ProductsContext"
-import ImageContainer from "./ImageContainer"
+import { useNavigate } from "react-router-dom";
+import { useProducts } from "../hooks/useProducts"
+import { useCart } from "../hooks/useCart";
 
 function Products() {
 
     const { products } = useProducts();
+    const { cartItems, addToCart } = useCart();
+    const navigate = useNavigate();
 
     return (
         <section>
@@ -17,6 +20,8 @@ function Products() {
                 <div className="row g-4 justify-content-center mt-5">
                     {
                         products.map((product, index) => {
+                            const productInCart = cartItems.find((item) => item.id === product.id);
+                            const productQuantity = productInCart ? `(${productInCart.quantity})` : '';
 
                             return (
                                 <div className="col-11 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay={`${(index + 1) * 200}`} key={product.id}>
@@ -24,11 +29,11 @@ function Products() {
                                         <img src={product.source} alt="product" />
                                         <div className="pt-3 pb-4 px-3">
                                             <p className="product-title mb-1">{product.title}</p>
-                                            <p className="product-price">${product.price.toLocaleString()}</p>
+                                            <p className="product-price">&#8358;{product.price.toLocaleString()}</p>
 
                                             <div className="products-btns">
-                                                <button className="btn btn-sm dark-btn text-white me-2">View Details</button>
-                                                <button className="btn btn-sm golden-btn text-white">Add to cart</button>
+                                                <button className="btn btn-sm dark-btn text-white me-2" onClick={() => navigate(`/products/${product.id}`)}>View Details</button>
+                                                <button className="btn btn-sm golden-btn text-white" onClick={() => addToCart(product.id)}>Add to cart {productQuantity}</button>
                                             </div>
                                         </div>
                                     </div>

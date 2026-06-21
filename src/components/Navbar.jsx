@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpeg'
+import { Link } from "react-router-dom"
 
 function Navbar() {
 
@@ -6,29 +6,29 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-light sticky-top navEl">
                 <div className="container-fluid">
-                    <a className="navbar-brand logo-container position-relative py-3" href="#">
+                    <Link className="navbar-brand logo-container position-relative py-3" to='/'>
                         <img src="https://i.postimg.cc/pLgDd1D0/Adobe-Express-file.png" alt="No" />
-                        <span className="logo">Cover Natural Oil</span>
-                    </a>
+                        <span className="logo">Cova Natural Oil</span>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <a className="nav-link activeEl" aria-current="page" href="#">Home</a>
+                                <Link className="nav-link activeEl" to='/'>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
+                                <Link className="nav-link" href="#">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Services</a>
+                                <Link className="nav-link" to='/checkout'>Cart</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Portfolio</a>
+                                <Link className="nav-link" href="#">Portfolio</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#" tabIndex="-1" aria-disabled="true">Contact</a>
+                                <Link className="nav-link" href="#">Contact</Link>
                             </li>
                         </ul>
 

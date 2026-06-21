@@ -1,16 +1,6 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 import Products from '../components/Products';
 
 function Home() {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false
-        })
-    }, []);
 
     return (
         <>
@@ -23,7 +13,7 @@ function Home() {
                             <button className="btn btn-sm public-btn-2 ps-3 mt-2" data-aos="fade-up" data-aos-delay="100">Contact <i className="bi bi-arrow-right"></i></button>
                         </div>
                         <div className="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://i.postimg.cc/76SDPzPX/download-(1).jpg" alt="" className="img-fluid right-image w-100 mt-3 d-md-none" />
+                            <img src="https://i.postimg.cc/76SDPzPX/download-(1).jpg" alt="product" className="img-fluid right-image w-100 mt-3 d-md-none" />
                         </div>
                     </div>
                 </div>
