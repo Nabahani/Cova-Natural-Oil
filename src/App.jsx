@@ -15,6 +15,7 @@ import Checkout from './pages/Checkout';
 import { CartProvider } from './context/CartContext';
 import Order from './pages/Order';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function MainLayout() {
 
@@ -24,6 +25,7 @@ function MainLayout() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   )
 }

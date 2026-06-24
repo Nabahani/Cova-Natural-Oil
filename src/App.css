@@ -163,6 +163,7 @@ button.scrollTopBtn {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
   background-color: var(--golden-button);
   color: white;
@@ -367,7 +368,7 @@ img.item-image {
   text-decoration: underline;
 }
 
-.custom-icons {
+.custom-icons i {
   font-size: 35px;
 }
 
@@ -377,6 +378,43 @@ img.item-image {
 
 .custom-icons:hover i {
   font-size: 40px;
+}
+
+/* Footer stylings */
+.footer {
+  background-color: var(--dark-color-2);
+}
+
+.footer-heading {
+  font-weight: 600;
+  color: #E5A93C;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: var(--unique-font);
+}
+
+.footer .title-6 {
+  color: #F4F1EA;
+  font-size: 16px;
+}
+
+.footer .paragraph {
+  font-size: 14px;
+  color: #F4F1EA;
+}
+
+.footer ul {
+  padding: 0 4px;
+  list-style-type: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  transition: text-decoration .3s ease;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -473,7 +511,8 @@ img.item-image {
   }
 
   ul li .nav-link,
-  .total-price {
+  .total-price,
+  .footer-heading {
     font-size: 15px;
   }
 
@@ -483,13 +522,15 @@ img.item-image {
     font-size: 12px;
   }
 
-  button.smaller-font {
+  button.smaller-font,
+  .footer .paragraph {
     font-size: 11px;
   }
 
   .paragraph,
   .subtotal-price,
-  input.custom-input {
+  input.custom-input,
+  .footer .title-6 {
     font-size: 13px;
   }
 
@@ -497,7 +538,7 @@ img.item-image {
     font-size: 36px;
   }
 
-  .custom-icons {
+  .custom-icons i {
     font-size: 31px;
   }
 }

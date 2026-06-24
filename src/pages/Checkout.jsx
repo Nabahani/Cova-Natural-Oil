@@ -37,7 +37,7 @@ function Checkout() {
         <section>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-lg-7">
+                    <div className="col-12 col-lg-7" data-aos="fade-up" data-aos-delay="0">
                         <p className="title-5 mb-2">Order Summary</p>
                         <div className="checkout-container p-3">
                             <p className="title-6">Items</p>
@@ -75,7 +75,7 @@ function Checkout() {
                         </div>
                     </div>
 
-                    <div className="col-12 col-lg-5 mt-4 mt-lg-0">
+                    <div className="col-12 col-lg-5 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <p className="title-5 mb-2">Place Order</p>
                         <div className="checkout-container p-3 pb-4">
                             <div>

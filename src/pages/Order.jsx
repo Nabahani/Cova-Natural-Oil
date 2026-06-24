@@ -20,7 +20,7 @@ function Order() {
     }, [navigate, id]);
 
     return (
-        <section>
+        <section data-aos="fade-up">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-11 col-md-8 col-lg-5">

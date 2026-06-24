@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { handleWhatsAppRedirect } from "../components/utils/whastapp";
 
 function Navbar() {
 
@@ -33,7 +34,7 @@ function Navbar() {
                         </ul>
 
                         <div className="me-4">
-                            <button className="btn btn-sm public-btn ps-3">Contact <i className="bi bi-arrow-right"></i></button>
+                            <button className="btn btn-sm public-btn ps-3" onClick={handleWhatsAppRedirect}>Contact <i className="bi bi-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
