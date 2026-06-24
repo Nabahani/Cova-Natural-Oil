@@ -18,7 +18,7 @@ function ProductDetails() {
 
     const currentProduct = products.find((product) => product.id === Number(id));
     const { cartItems, addToCart } = useCart();
-    const productInCart = cartItems.find((item) => item.id === currentProduct.id);
+    const productInCart = cartItems.find((item) => item.id === currentProduct?.id);
     const productQuantity = productInCart ? `(${productInCart.quantity})` : '';
 
 

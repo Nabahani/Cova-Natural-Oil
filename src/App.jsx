@@ -13,6 +13,8 @@ import ProductDetails from './pages/ProductDetails';
 import NotFound from './pages/NotFound';
 import Checkout from './pages/Checkout';
 import { CartProvider } from './context/CartContext';
+import Order from './pages/Order';
+import Contact from './pages/Contact';
 
 function MainLayout() {
 
@@ -50,6 +52,8 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/products/:id' element={<ProductDetails />} />
               <Route path='/checkout' element={<Checkout />} />
+              <Route path='/order/:id/complete' element={<Order />} />
+              <Route path='/contact' element={<Contact />} />
             </Route>
 
             <Route path='/*' element={<NotFound />} />

@@ -60,7 +60,7 @@
 }
 
 ul li .nav-link {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   margin-right: 15px;
   color: var(--main-color);
@@ -77,18 +77,11 @@ ul li .nav-link.activeEl {
 
 button.public-btn {
   position: relative;
-  background-color: var(--green-color);
+  background-color: var(--golden-button);
   color: white;
   padding-right: 2.8rem;
   border: none;
   transition: all .3s ease;
-}
-
-button.public-btn:hover,
-button.public-btn:active,
-button.public-btn:focus {
-  background-color: var(--green-color-2) !important;
-  color: white !important;
 }
 
 button.public-btn i {
@@ -143,7 +136,10 @@ button.public-btn-2 {
 
 button.public-btn-2:hover,
 button.public-btn-2:active,
-button.public-btn-2:focus {
+button.public-btn:hover,
+button.public-btn:active,
+button.scrollTopBtn:hover,
+button.scrollTopBtn:active {
   background-color: var(--golden-button-2) !important;
   color: white !important;
 }
@@ -161,6 +157,16 @@ button.public-btn-2:hover i {
 
 .right-image {
   border-radius: 10px;
+}
+
+button.scrollTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  background-color: var(--golden-button);
+  color: white;
+  border: none;
 }
 
 /* Product section */
@@ -213,8 +219,7 @@ button.dark-btn {
 }
 
 button.dark-btn:hover,
-button.dark-btn:active,
-button.dark-btn:focus {
+button.dark-btn:active {
   background-color: var(--dark-color-2) !important;
   border: 1px solid var(--dark-color-2) !important;
 }
@@ -226,8 +231,7 @@ button.golden-btn {
 }
 
 button.golden-btn:hover,
-button.golden-btn:active,
-button.golden-btn:focus {
+button.golden-btn:active {
   background-color: var(--golden-button-2) !important;
   border: 1px solid var(--golden-button-2) !important;
 }
@@ -266,7 +270,8 @@ button.golden-btn:focus {
   font-weight: 500;
 }
 
-.checkout-container {
+.checkout-container,
+.custom-bg {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
   border-radius: 5px;
   background-color: #f3ffff;
@@ -297,6 +302,89 @@ button.smaller-font {
   font-size: 15px;
 }
 
+.paragraph,
+.subtotal-price,
+.golden-text {
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+.subtotal-price,
+.total-price {
+  font-weight: 500;
+}
+
+.total-price {
+  color: var(--golden-button);
+  font-size: 18px;
+}
+
+input.custom-input {
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: #f9ffff;
+}
+
+input.custom-input:focus {
+  background-color: #f9ffff;
+}
+
+.custom-radius {
+  border-radius: 20px;
+}
+
+.large-icon {
+  font-size: 40px;
+  color: green;
+}
+
+.bold-font {
+  font-weight: 500;
+}
+
+.light-font {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.golden-text {
+  color: var(--golden-button);
+}
+
+img.item-image {
+  width: 80px;
+  height: 70px;
+}
+
+.link-el {
+  display: block;
+  color: var(--golden-button);
+  text-decoration: none;
+  transition: text-decoration .3s ease;
+}
+
+.link-el:hover {
+  text-decoration: underline;
+}
+
+.custom-icons {
+  font-size: 35px;
+}
+
+.custom-icons i {
+  transition: font-size .3s ease;
+}
+
+.custom-icons:hover i {
+  font-size: 40px;
+}
+
+@media (max-width: 1200px) {
+  .custom-image {
+    height: 140px;
+  }
+}
+
 @media (max-width: 992px) {
   .navEl {
     height: 100%;
@@ -319,10 +407,6 @@ button.smaller-font {
     height: 220px;
     width: 100%;
   }
-
-  .custom-image {
-    height: 140px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -344,13 +428,14 @@ button.smaller-font {
     font-size: 18px;
   }
 
-  ul li .nav-link,
   button.public-btn,
   button.public-btn-2,
   .product-price,
   button.golden-btn,
   button.dark-btn,
-  .current-product-des {
+  button.custom-icon,
+  .current-product-des,
+  .title-5 {
     font-size: 16px;
   }
 
@@ -377,5 +462,42 @@ button.smaller-font {
   .title-4 {
     font-size: 22px;
     font-weight: 500;
+  }
+
+  .custom-image {
+    height: 70px;
+  }
+
+  .title-6 {
+    font-size: 14px;
+  }
+
+  ul li .nav-link,
+  .total-price {
+    font-size: 15px;
+  }
+
+  .price-1,
+  button.update-btn,
+  .quantity {
+    font-size: 12px;
+  }
+
+  button.smaller-font {
+    font-size: 11px;
+  }
+
+  .paragraph,
+  .subtotal-price,
+  input.custom-input {
+    font-size: 13px;
+  }
+
+  .large-icon {
+    font-size: 36px;
+  }
+
+  .custom-icons {
+    font-size: 31px;
   }
 }

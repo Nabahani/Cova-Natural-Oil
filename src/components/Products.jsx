@@ -29,11 +29,11 @@ function Products() {
                                         <img src={product.source} alt="product" />
                                         <div className="pt-3 pb-4 px-3">
                                             <p className="product-title mb-1">{product.title}</p>
-                                            <p className="product-price">&#8358;{product.price.toLocaleString()}</p>
+                                            <p className="product-price mb-1">&#8358;{product.price.toLocaleString()}</p>
 
                                             <div className="products-btns">
-                                                <button className="btn btn-sm dark-btn text-white me-2" onClick={() => navigate(`/products/${product.id}`)}>View Details</button>
-                                                <button className="btn btn-sm golden-btn text-white" onClick={() => addToCart(product.id)}>Add to cart {productQuantity}</button>
+                                                <button className="btn btn-sm dark-btn text-white mt-2 me-2" onClick={() => navigate(`/products/${product.id}`)}>View Details</button>
+                                                <button className="btn btn-sm golden-btn text-white mt-2" onClick={() => addToCart(product.id)}>Add to cart {productQuantity}</button>
                                             </div>
                                         </div>
                                     </div>

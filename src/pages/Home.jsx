@@ -1,4 +1,5 @@
 import Products from '../components/Products';
+import ScrollTop from '../components/ScrollTop';
 
 function Home() {
 
@@ -20,6 +21,8 @@ function Home() {
             </section>
 
             <Products />
+
+            <ScrollTop />
         </>
     )
 }

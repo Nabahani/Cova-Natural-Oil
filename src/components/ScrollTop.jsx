@@ -29,7 +29,7 @@ function ScrollTop() {
     return (
         <>
             {
-                show && <button onClick={() => scrollTop()} className="btn btn-sm btn-primary scrollTopBtn">
+                show && <button onClick={() => scrollTop()} className="btn btn-sm scrollTopBtn">
                     <i className="bi bi-arrow-up"></i>
                 </button>
             }
