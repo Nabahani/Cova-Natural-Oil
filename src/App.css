@@ -62,7 +62,7 @@
 ul li .nav-link {
   font-size: 17px;
   font-weight: 500;
-  margin-right: 15px;
+  margin-right: 5px;
   color: var(--main-color);
   transition: all .3s ease;
 }
@@ -415,6 +415,19 @@ img.item-image {
 
 .footer ul li a:hover {
   text-decoration: underline;
+}
+
+/* About stylings */
+.about-page .title-5 {
+  color: var(--golden-button-2);
+}
+
+.about-page .title-6 {
+  color: rgb(98, 78, 35);
+}
+
+.about-page .paragraph {
+  color: var(--main-color);
 }
 
 @media (max-width: 1200px) {

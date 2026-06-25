@@ -16,6 +16,7 @@ import { CartProvider } from './context/CartContext';
 import Order from './pages/Order';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import About from './pages/About';
 
 function MainLayout() {
 
@@ -56,6 +57,7 @@ function App() {
               <Route path='/checkout' element={<Checkout />} />
               <Route path='/order/:id/complete' element={<Order />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/about' element={<About />} />
             </Route>
 
             <Route path='/*' element={<NotFound />} />

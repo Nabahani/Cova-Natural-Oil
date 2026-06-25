@@ -5,7 +5,7 @@ import { openEmail } from "../components/utils/email";
 function Contact() {
 
     return (
-        <section style={{ height: '60vh' }}>
+        <section style={{ minHeight: '60vh' }}>
             <div className="container mt-sm-3">
                 <p className="title-5 mb-2 ms-2 ms-sm-0">Contact Us</p>
 

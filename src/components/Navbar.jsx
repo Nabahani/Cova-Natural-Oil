@@ -20,13 +20,10 @@ function Navbar() {
                                 <Link className="nav-link activeEl" to='/'>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">About</Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className="nav-link" to='/checkout'>Cart</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">Portfolio</Link>
+                                <Link className="nav-link" to='/about'>About</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/contact'>Contact</Link>
